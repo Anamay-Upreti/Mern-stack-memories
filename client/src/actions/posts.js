@@ -8,3 +8,13 @@ export const getPosts = () => async (dispatch) => {
     console.error(error.message);
   }
 };
+
+export const createPost = (post) => async (dispatch) => {
+  try {
+    const  {data} = await api.createPost(post);
+
+    dispatch({ type: 'CREATE', playload: data});
+  } catch (error) {
+    console.log(error);
+  }
+}
