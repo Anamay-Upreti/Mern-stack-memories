@@ -9,6 +9,8 @@ const Posts = () => {
   const classes = useStyle();
 
   console.log(posts);
+
+  console.log(posts);
   return (
     <>
         <h1>POSTS</h1>
